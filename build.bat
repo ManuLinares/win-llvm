@@ -18,7 +18,7 @@ cd %THIS_DIR%
 mkdir llvm-project\runtimes\build
 cd llvm-project\runtimes\build
 cmake .. %RUNTIMES_CMAKE_CONFIGURE_FLAGS%
-cmake --build . %CMAKE_BUILD_FLAGS%
+cmake --build . %CMAKE_BUILD_FLAGS% --verbose
 cmake --build . --target install %CMAKE_BUILD_FLAGS%
 
 cd %THIS_DIR%
